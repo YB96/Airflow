@@ -1,0 +1,35 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+
+  webserver:
+    image: puckel/docker-airflow
+    environment:
+      - LOAD_EX=n
+      - FERNET_KEY="l2tsFqMMaxWib5URwglPJNfQ2a0a9_Ornj-Cq1JeDpU="
+      - EXECUTOR=Local
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  scheduler:
+    image: puckel/docker-airflow
+    environment:
+      - LOAD_EX=n
+      - FERNET_KEY= "l2tsFqMMaxWib5URwglPJNfQ2a0a9_Ornj-Cq1JeDpU="
+      - EXECUTOR=Local
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+      
+    depends_on:
+      - postgres
+
+
