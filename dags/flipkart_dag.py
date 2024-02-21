@@ -3,7 +3,7 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.postgres_operator import PostgresOperator
 from datetime import datetime, timedelta
-from flipkart import flipkart_func
+from dags.flipkart_selenium import flipkart_func
 
 
 default_args = {
