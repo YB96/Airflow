@@ -7,4 +7,3 @@ dags/__pycache__/
 dockerfile.txt
 =======
 /.venv
->>>>>>> 8fe8ea1 (added a new dag which runs jupyter notebook)
