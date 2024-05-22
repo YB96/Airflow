@@ -1,1 +1,6 @@
 /.venv
+/air_env
+logs
+.ipynb_checkpoints
+dags/__pycache__/
+dockerfile.txt
