@@ -5,5 +5,9 @@ logs
 .ipynb_checkpoints
 dags/__pycache__/
 dockerfile.txt
+<<<<<<< HEAD
 =======
 /.venv
+=======
+climate change/climate-change-earth-surface-temperature-data
+>>>>>>> 6720dab (added jupyter notebook project)
