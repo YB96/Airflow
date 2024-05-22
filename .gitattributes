@@ -1,1 +1,2 @@
+climate[[:space:]]change/climate-change-earth-surface-temperature-data/GlobalLandTemperaturesByCity.csv filter=lfs diff=lfs merge=lfs -text
 *.csv !text !filter !merge !diff
