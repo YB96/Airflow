@@ -38,7 +38,7 @@
 #
 # Feel free to modify this file to suit your needs.
 ---
-version: '3'
+version: '3'      
 x-airflow-common:
   &airflow-common
   # In order to add custom dependencies or upgrade provider packages you can use your extended image.
@@ -72,6 +72,13 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+  pyspark:
+    image: "jupyter/all-spark-notebook"
+    volumes:
+      - D:/backup/Python/Airflow/pyspark-data:/home/jovyan
+    ports:
+      - 8888:8888
+
   elastic:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.3.3
     environment:

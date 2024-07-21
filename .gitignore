@@ -6,3 +6,5 @@ logs
 dags/__pycache__/
 dockerfile.txt
 climate change/climate-change-earth-surface-temperature-data/*.csv
+# Or ignore all CSV files
+*.csv

@@ -82,7 +82,6 @@ def scrape_and_save_to_csv():
     all_info_df = all_info(20)
     if all_info_df is not None:
         all_info_df.to_csv('D:\\Python\\Airflow\\all_info_final.csv', index=None)
-        
         print("Data fetched and saved as all_info_final.csv")
 
 scrape_task = PythonOperator(
