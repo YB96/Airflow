@@ -1,10 +1,21 @@
-<<<<<<< HEAD
+# Virtual environment directories
 /.venv
 /air_env
+
+# Log files
 logs
+
+# Jupyter notebook checkpoints
 .ipynb_checkpoints
+
+# Python cache files
 dags/__pycache__/
+
+# Ignore Dockerfile
 dockerfile.txt
+
+# Ignore specific CSV files
 climate change/climate-change-earth-surface-temperature-data/*.csv
+
 # Or ignore all CSV files
 *.csv

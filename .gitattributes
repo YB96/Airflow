@@ -1,1 +1,7 @@
 *.csv binary
+# Handle line endings for text files
+* text=auto
+
+# Handle specific file types
+*.sh text eol=lf
+*.bat text eol=crlf
