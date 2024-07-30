@@ -14,8 +14,8 @@ dags/__pycache__/
 # Ignore Dockerfile
 dockerfile.txt
 
-# Ignore specific CSV files
-climate change/climate-change-earth-surface-temperature-data/*.csv
-
-# Or ignore all CSV files
+# Ignore all CSV files
 *.csv
+
+# Ignore specific CSV files (this is redundant due to the rule above, but if needed, specify it)
+climate change/climate-change-earth-surface-temperature-data/
