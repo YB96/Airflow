@@ -6,7 +6,7 @@
 logs
 
 # Jupyter notebook checkpoints
-.ipynb_checkpoints
+#.ipynb_checkpoints
 
 # Python cache files
 dags/__pycache__/
